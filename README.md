@@ -1,2 +1,0 @@
-# panaqia
-Events App
