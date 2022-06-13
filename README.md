@@ -6,8 +6,10 @@
 * [Built With](#built-with)
 * [Prerequisites](#prerequisites)
 * [Getting Started](#getting-started)
+* [Installation](#installation)
 * [Contributing](#contributing)
-* [Authors](#author)
+* [Authors](#authors)
+* [.env file configurations](#configuration-file)
 * [Acknowledgements](#acknowledgements)
 
 ## About The Project
@@ -17,7 +19,6 @@
 
 
 ## [Live Demo - Heroku](https://panaqia.herokuapp.com/)
-<!-- ## [Live Demo ]() -->
 
 ## Built With
 
@@ -27,7 +28,7 @@
 
 ## Prerequisites
 
-- PHP 7.1 or later (best if also added to the env path for direct access with the terminal)
+- PHP 7.1 or later (best if also added to the env path `$PATH` for easy access while using the terminal)
 - MySQL Server, PsotgreSQL, or any other RDBMS supported by Laravel
 - Composer
 - Text Editor - Visual Studio Code recommended
@@ -35,30 +36,51 @@
 
 ## Getting Started
 
-* Clone this repo <https://github.com/dismuskiplimo/panaqia.git>
-
-    bash
-    git clone <https://github.com/dismuskiplimo/panaqia.git>
-    
+* Clone this repo
+    ```shell
+    git clone https://github.com/dismuskiplimo/panaqia.git
+    ```
 
 * Navigate to panaqia folder/directory
 
-    bash
+    ```shell
     cd panaqia
-    
-* Clone the project into your local machine
-* Navigate into the project folder
+    ```
 * Rename `.env.example` to become `.env`
+    ```shell
+    mv .env.example .env
+    ```
 * Open the `.env` file using your favourite text editor. This file contains necessary configuration data for the application to run
-* You need only to edit the `DB` section e.g `DB_DATABASE`,`DB_USERNAME`,`DB_PASSWORD`, for the application to finish installing. You need to make sure the database selected is already created in MySQL server.
-* Open terminal within the project folder and type in the following commands in order
-* `php artisan key:generate` to generate application keys
-* `composer install` to install all the dependencies.
-* `php artisan migrate` to create the tables in MySQL
-* `php artisan db:seed` to populate the database with system configuration data
-* You're done 👍
-* Now, run `php artisan serve` to launch a development server.
-* Navigate to `http://localhost:8000` to view the website
+* You need only to edit the `DB` section e.g `DB_DATABASE`,`DB_USERNAME`,`DB_PASSWORD`, for the initial installation. Ensure that the database selected is already created in your REBMS server (mysql, postgresql, sqlite e.t.c) or the installation will fail.
+
+## Installation
+
+After the `.env` configuration file has been updated, resume to the terminal and type in the following commands
+
+1. Install all the dependencies.
+   ```shell
+    composer install
+   ```
+2. Generate the application keys
+    ```shell
+    php artisan key:generate
+    ```
+3. Create the tables and migrate them to your DB
+    ```shell
+    php artisan migrate
+    ```
+4. Populate the database with necessary system configuration
+    ```shell
+    php artisan db:seed`
+    ```
+    Yaay, you're done 👍
+    
+5. Now, Launch the development server.
+   ```shell
+   php artisan serve
+   ```
+6. Navigate to `http://localhost:8000` to view the website
+7. Once you verify that the website is working, re-open the `.env` file to finish defining the remaining configurations
 
 ## Contributing
 
@@ -72,6 +94,12 @@ Feel free to check the [issues page](../../issues)
   4. Push to the Branch (`git push -u origin feature/newFeature`)
   5. Open a Pull Request
 
+## Configuration File
+
+The `.env` file located in the root directory contains all the necessary configurations necessary for the application to run
+
+
+
 ## Authors
 
 👤 *Dismus Ng'eno*
@@ -83,6 +111,7 @@ Feel free to check the [issues page](../../issues)
 ## Acknowledgements
 
 * [Laravel Team](https://laravel.com/) for the amazing [Documentation](https://laravel.com/docs/master/introduction) on Laravel.
+* [Safaricom Developer Team](https://developer.safaricom.co.ke/) for their in-depth [Documentation](https://ldeveloper.safaricom.co.ke) on the MPESA API.
 
 ## Show your support
 
