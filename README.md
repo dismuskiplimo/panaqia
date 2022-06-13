@@ -1,5 +1,7 @@
 ## Panaqia Laravel Application
 
+![panaqia](https://user-images.githubusercontent.com/15145265/173414854-8feb95ca-029a-4c8f-87d3-3dbf3466506b.jpg)
+
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -8,8 +10,8 @@
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Contributing](#contributing)
-* [Authors](#authors)
 * [.env file configurations](#configuration-file)
+* [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
 
 ## About The Project
@@ -18,7 +20,8 @@
 
 
 
-## [Live Demo - Heroku](https://panaqia.herokuapp.com/)
+### [Live Demo - Heroku](https://panaqia.herokuapp.com/)
+N/B: The image upload feature does not work in the demo link because Heroku does not have the GD & exif libraries necessary for image upload and processing
 
 ## Built With
 
