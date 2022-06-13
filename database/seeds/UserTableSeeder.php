@@ -26,7 +26,7 @@ class UserTableSeeder extends Seeder
         		'name'			=> 'Dismus Kiplimo',
         		'email'			=> 'dismuskiplimo@gmail.com',
         		'username'		=> 'dismuskiplimo',
-        		'password'		=> bcrypt('lashizzle'),
+        		'password'		=> bcrypt('dismuskiplimo'),
         		'country_code'	=> 'KE',
         		'created_at'	=> $this->_date,
         		'updated_at'	=> $this->_date,
