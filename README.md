@@ -113,7 +113,7 @@ The `.env` file located in the root directory contains all the necessary configu
 
 ## Acknowledgements
 
-* [Laravel Team](https://laravel.com/) for the amazing [Documentation](https://laravel.com/docs/master/introduction) on Laravel.
+* [Laravel Team](https://laravel.com/docs) for the amazing [Documentation](https://laravel.com/docs) on Laravel.
 * [Safaricom Developer Team](https://developer.safaricom.co.ke/) for their in-depth [Documentation](https://ldeveloper.safaricom.co.ke) on the MPESA API.
 
 ## Show your support
